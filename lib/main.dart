@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:quotes_app/home_screen.dart';
 import 'package:quotes_app/splash_screen.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-void main() {
+void main() async{
+  await dotenv.load(fileName: ".env");
   runApp(const MyApp());
 }
+final apiKey = dotenv.env['API_KEY'];
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

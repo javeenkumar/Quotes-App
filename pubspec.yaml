@@ -38,6 +38,7 @@ dependencies:
   flutter_spinkit: ^5.2.1
   animated_text_kit: ^4.2.3
   flutter_launcher_icons: ^0.14.4
+  flutter_dotenv: ^6.0.0
 
 flutter_icons:
   android: true
